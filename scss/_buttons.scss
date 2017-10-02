@@ -1,0 +1,71 @@
+.button{
+	-webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    -ms-transform: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+.button{
+	display:block;
+	border-radius:8px;
+	box-shadow:0 4px 10px rgba(0,0,0,0.2);
+	font-weight:400;
+	letter-spacing:0.5px;
+	&:hover,&:active,&:focus{
+		text-decoration:none;
+		box-shadow:0 2px 4px rgba(0,0,0,0.2);;
+	}
+	&.big{
+		max-width:280px;
+		padding:1rem;
+		font-size:1rem;
+	}
+	&.small{
+		min-width:220px;
+		max-width:280px;
+		padding:0.5rem;
+		font-size:0.875rem;
+		font-weight:600;
+	}
+	&.red-full{
+		background:$red;
+		color:white;
+		font-weight:600;
+		&:hover,&:active,&:focus{
+			background:$red-hover;
+		}
+	}
+	&.red-empty{
+		background:transparent;
+		color:$red;
+		border:2px solid $red;
+		box-shadow:none;
+		&:hover{
+			background:$red-hover;
+			color:white;
+		}
+	}
+	&.close-modal{
+		background:$middle-grey;
+		border:none;
+		padding:10px 15px;
+		font-size:.8rem;
+		color:white;
+		letter-spacing:1px;
+		&:hover,&:active,&:focus{
+			opacity:0.8;
+		}
+	}
+	&.centered{
+		margin:1rem auto;
+	}
+}
+
+button{
+	border:none;
+	&:hover,button:active,button:focus{
+		outline:0;
+		cursor:pointer;
+	}
+}
